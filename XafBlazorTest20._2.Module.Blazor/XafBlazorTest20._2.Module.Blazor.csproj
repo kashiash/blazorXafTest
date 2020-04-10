@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>XafBlazorTest20._2.Module.Blazor</RootNamespace>
+    <AssemblyName>XafBlazorTest20._2.Module.Blazor</AssemblyName>
+    <Deterministic>false</Deterministic>
+    <PackageId>XafBlazorTest20._2.Module.Blazor</PackageId>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp.Blazor.All" Version="20.1.3-pre-*" />
+    <PackageReference Include="DevExpress.ExpressApp.Core.All" Version="20.1.3-pre-*" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" Version="20.1.3-pre-*" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.1.3-pre-*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XafBlazorTest20._2.Module\XafBlazorTest20._2.Module.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project> 
