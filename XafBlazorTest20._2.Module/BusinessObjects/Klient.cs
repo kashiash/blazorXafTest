@@ -27,6 +27,7 @@ namespace Demo1.Module.BusinessObjects
 
 
 
+        string test1;
         string nIP;
         int terminPlatnosci;
         string miejscowosc;
@@ -53,7 +54,7 @@ namespace Demo1.Module.BusinessObjects
             get => skrot;
             set => SetPropertyValue(nameof(Skrot), ref skrot, value);
         }
-        
+
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string NIP
         {
@@ -101,6 +102,12 @@ namespace Demo1.Module.BusinessObjects
 
 
         
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Test1
+        {
+            get => test1;
+            set => SetPropertyValue(nameof(Test1), ref test1, value);
+        }
         public int TerminPlatnosci
         {
             get => terminPlatnosci;

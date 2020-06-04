@@ -10,7 +10,7 @@ namespace XafBlazorTest20._2.Blazor.Server {
     public partial class XafBlazorTest202BlazorApplication : BlazorApplication {
         public XafBlazorTest202BlazorApplication() {
             InitializeComponent();
-            ConnectionString = @"Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=XafBlazorTest20._2";
+            ConnectionString = @"Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=XafBlazorTest1a";
         }
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             //	args.ObjectSpaceProviders.Add(new SecuredObjectSpaceProvider((ISelectDataSecurityProvider)Security, args.ConnectionString, true)); // this not working for me problem with references

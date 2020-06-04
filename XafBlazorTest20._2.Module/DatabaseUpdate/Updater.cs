@@ -30,7 +30,7 @@ namespace XafBlazorTest20._2.Module.DatabaseUpdate
             //    theObject = ObjectSpace.CreateObject<DomainObject1>();
             //    theObject.Name = name;
             //}
-            DodajKraje(ObjectSpace);
+        //    DodajKraje(ObjectSpace);
 
          //   WygenerujKlientow();
 
